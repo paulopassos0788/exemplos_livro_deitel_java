@@ -1,0 +1,63 @@
+### Exercícios Práticos Baseados no Capítulo
+
+1. **Uso de Autoboxing e Auto-Unboxing**
+   Escreva um programa que use autoboxing para armazenar valores inteiros em uma lista (`ArrayList<Integer>`) e, em seguida, calcule a soma de todos os valores usando auto-unboxing.
+
+2. **Manipulação de Listas**
+   Crie um programa que:
+   - Adicione elementos a um `ArrayList` e a um `LinkedList`.
+   - Utilize um `Iterator` para exibir os elementos do `ArrayList`.
+   - Remova elementos da lista usando o `Iterator`.
+
+3. **Métodos de Ordenação e Embaralhamento**
+   Escreva um programa que:
+   - Crie uma lista de números inteiros.
+   - Ordene os números usando `Collections.sort`.
+   - Embaralhe a lista com `Collections.shuffle`.
+   - Exiba a lista antes e depois de cada operação.
+
+4. **Uso dos Métodos reverse, fill, copy, max e min**
+   Crie um programa que:
+   - Inicialize uma lista com 10 valores inteiros.
+   - Inverta a ordem dos elementos usando `Collections.reverse`.
+   - Substitua todos os valores da lista por um número fixo usando `Collections.fill`.
+   - Copie os valores de uma lista para outra usando `Collections.copy`.
+   - Encontre o maior e o menor valor usando `Collections.max` e `Collections.min`.
+
+5. **Busca Binária**
+   Implemente um programa que:
+   - Crie uma lista de strings e ordene-a.
+   - Utilize o método `Collections.binarySearch` para localizar palavras específicas.
+   - Exiba o índice encontrado ou uma mensagem indicando que o item não foi encontrado.
+
+6. **Uso de Métodos addAll, frequency e disjoint**
+   Crie um programa que:
+   - Inicialize duas listas com diferentes conjuntos de elementos.
+   - Adicione elementos de uma lista a outra usando `Collections.addAll`.
+   - Determine a frequência de um elemento em uma lista com `Collections.frequency`.
+   - Verifique se duas listas são disjuntas (não possuem elementos em comum) usando `Collections.disjoint`.
+
+7. **Uso da Classe Stack**
+   Escreva um programa que simule uma pilha utilizando a classe `Stack`:
+   - Adicione elementos na pilha.
+   - Remova elementos usando `pop` até que a pilha esteja vazia.
+   - Exiba o elemento no topo da pilha sem removê-lo usando `peek`.
+
+8. **Trabalhando com PriorityQueue e Queue**
+   Crie um programa que:
+   - Utilize uma `PriorityQueue` para armazenar números.
+   - Exiba os elementos na ordem de prioridade.
+   - Remova os elementos da fila e exiba-os.
+
+9. **Manipulação de Mapas**
+   Crie um programa que utilize um `HashMap` para armazenar pares de chave-valor:
+   - Adicione cinco pares (por exemplo, nome e idade).
+   - Exiba todas as chaves e valores.
+   - Remova um par baseado em sua chave.
+   - Verifique se um valor específico está presente.
+
+10. **Coleções Não Modificáveis e Sincronizadas**
+    Implemente um programa que:
+    - Crie uma lista sincronizada usando `Collections.synchronizedList`.
+    - Inicialize uma lista não modificável usando `Collections.unmodifiableList`.
+    - Tente adicionar elementos à lista não modificável e capture a exceção lançada.
