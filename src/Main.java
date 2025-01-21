@@ -1,15 +1,48 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println(isArmstrongNumber(9926315));
+
     }
+
+    static boolean isArmstrongNumber(int numberToCheck) {
+
+        if (numberToCheck == 0) {
+            return true;
+        }
+
+        if(numberToCheck < 10){
+            return true;
+        }
+
+        int[] digits = converterArray(numberToCheck);
+        var result = 0;
+        var pow = digits.length;
+
+        for (int i = 0; i < digits.length; i++) {
+            result += (Math.pow(digits[i], pow));
+        }
+
+        if(result == numberToCheck) {
+            return true;
+        }
+
+        return false;
+    }
+
+    private static int[] converterArray(int numberToCheck) {
+        String numeroComoString = Integer.toString(numberToCheck);
+        int[] arrayDeDigitos = new int[numeroComoString.length()];
+
+        for (int i = 0; i < numeroComoString.length(); i++) {
+            arrayDeDigitos[i] = Character.getNumericValue(numeroComoString.charAt(i));
+        }
+
+        return arrayDeDigitos;
+    }
+
 }
